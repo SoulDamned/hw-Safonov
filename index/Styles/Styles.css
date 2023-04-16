@@ -1,3 +1,6 @@
+.header {
+    color: blue;
+}
 .img {
     max-width: 100%;
     float: left;
@@ -22,7 +25,6 @@
     padding: 5px;
     width: 47%;
     font-size: 2vw;
-
 }
 .five {
     margin: 5px;
