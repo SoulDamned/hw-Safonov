@@ -11,7 +11,13 @@
 <body>
 <header>
     <img src="../images/image_12106111005141139892.gif" width="100" height="100"  alt="Нету">
+    <?php
+    include 'string.php';
+    ?>
 </header>
+<?php
+include 'day_night theme.php';
+?>
 <div class="one">
         <img src="../images/WP_20140323_062.jpg" height="600" width="400" alt="none">
     <div class="two">
@@ -21,7 +27,9 @@
         <div class="break">
         </div>
         <div class="four">
-            Здравствуйте! Проживаю в городе Магнитогорск. Работаю электриком на коксохимическом произдвестве ММК. Так же являюсь студентом 4 курса МГТУ им. Носова.
+            <?php
+            include 'title color.php';
+            ?>
         </div>
         <div class="five">
             Опыта в IT сфере нет, но интерес всегда был. Решил расширить профессиональные навыки.
@@ -134,17 +142,5 @@
         Фродо выпадает участь уничтожить Кольцо.
     </div>
 </section>
-
 </body>
-
 </html>
-<?php
-$date = new DateTime('NOW');
-$hour = $date->format('G');
-if ( ($hour > 10) && ($hour <20) ) {
-    echo "<body style='background-image: url(../images/1.jpg)'>";
-} else {
-    echo "<body style='background-image: url(../images/0f18591acaee82fd476d4dc811b5d999.jpeg)'>";
-
-}
-?>
